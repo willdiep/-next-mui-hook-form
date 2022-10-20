@@ -18,8 +18,12 @@ const defaultTcPhases = defaultTcValues.phases;
 import styles from "../styles/Home.module.css";
 
 interface IFormInputs {
-  phase1: string | number;
-  phase2: string | number;
+  phase1: string;
+  phase2: string;
+  phase3: string;
+  phase4: string;
+  phase5: string;
+  phase6: string;
 }
 
 const yupValidations = yup
@@ -32,6 +36,10 @@ const yupValidations = yup
 const schema = yup.object().shape({
   phase1: yupValidations,
   phase2: yupValidations,
+  phase3: yupValidations,
+  phase4: yupValidations,
+  phase5: yupValidations,
+  phase6: yupValidations,
 });
 
 const Home: FC = () => {
@@ -62,29 +70,7 @@ const Home: FC = () => {
           <code className={styles.code}>pages/index.js</code>
         </p>
         <form onSubmit={handleSubmit(onSubmit)}>
-          {defaultTcPhases.map(phase => (
-            <div key={uuidv4()}>
-              <Controller
-                // name="phase1"
-                name={`phase${phase.id + 1}`}
-                control={control}
-                defaultValue=""
-                render={({ field }) => (
-                  <TextField
-                    {...field}
-                    label="Number"
-                    variant="outlined"
-                    error={!!errors.phase1}
-                    helperText={errors.phase1 ? errors.phase1?.message : ""}
-                    fullWidth
-                    margin="dense"
-                  />
-                )}
-              />
-            </div>
-          ))}
-
-          {/* <Controller
+          <Controller
             name="phase1"
             control={control}
             defaultValue=""
@@ -116,7 +102,75 @@ const Home: FC = () => {
                 margin="dense"
               />
             )}
-          /> */}
+          />
+          <br />
+          <Controller
+            name="phase3"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <TextField
+                {...field}
+                label="Number"
+                variant="outlined"
+                error={!!errors.phase3}
+                helperText={errors.phase3 ? errors.phase3?.message : ""}
+                fullWidth
+                margin="dense"
+              />
+            )}
+          />
+          <br />
+          <Controller
+            name="phase4"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <TextField
+                {...field}
+                label="Number"
+                variant="outlined"
+                error={!!errors.phase4}
+                helperText={errors.phase4 ? errors.phase4?.message : ""}
+                fullWidth
+                margin="dense"
+              />
+            )}
+          />
+          <br />
+          <Controller
+            name="phase5"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <TextField
+                {...field}
+                label="Number"
+                variant="outlined"
+                error={!!errors.phase5}
+                helperText={errors.phase5 ? errors.phase5?.message : ""}
+                fullWidth
+                margin="dense"
+              />
+            )}
+          />
+          <br />
+          <Controller
+            name="phase6"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <TextField
+                {...field}
+                label="Number"
+                variant="outlined"
+                error={!!errors.phase6}
+                helperText={errors.phase6 ? errors.phase6?.message : ""}
+                fullWidth
+                margin="dense"
+              />
+            )}
+          />
           <br />
 
           <input type="submit" />
