@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { TextField, Button } from "@mui/material";
 import { Controller, useForm } from "react-hook-form";
 
-export const FormWithHookForm = () => {
+export const MultiTextfields = () => {
   const { handleSubmit, reset, control } = useForm();
   const onSubmit = (data: any) => console.log(data);
 
@@ -48,4 +48,4 @@ export const FormWithHookForm = () => {
   );
 };
 
-export default FormWithHookForm;
+export default MultiTextfields;

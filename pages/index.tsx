@@ -3,8 +3,10 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-// import FormWithHookForm from "../components/FormWithHookForm";
-import FormInputMultiCheckbox from "../components/FormInputMultiCheckbox";
+// import MultiTextfields from "../components/MultiTextfields";
+// import MultiCheckboxes from "../components/MultiCheckboxes";
+// import FromBlogDemo from "../components/FromBlogDemo";
+import MultiTextfieldsValidations from "../components/MultiTextfieldsValidations";
 
 const Home: NextPage = () => {
   return (
@@ -16,8 +18,10 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        {/* <FormWithHookForm /> */}
-        <FormInputMultiCheckbox />
+        {/* <MultiTextfields /> */}
+        {/* <MultiCheckboxes /> */}
+        {/* <FromBlogDemo /> */}
+        <MultiTextfieldsValidations />
       </main>
     </div>
   );

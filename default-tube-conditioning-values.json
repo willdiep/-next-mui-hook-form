@@ -1,0 +1,76 @@
+{
+  "phases": [
+    {
+      "id": 0,
+      "startKv": 5,
+      "targetKv": 75,
+      "incrementKv": 1,
+      "startMa": 0,
+      "targetMa": 0,
+      "incrementMa": 0,
+      "duration": 4,
+      "status": "Completed",
+      "skipped": false
+    },
+    {
+      "id": 1,
+      "startKv": 30,
+      "targetKv": 75,
+      "incrementKv": 1,
+      "startMa": 1,
+      "targetMa": 1,
+      "incrementMa": 0,
+      "duration": 4,
+      "status": "Completed",
+      "skipped": false
+    },
+    {
+      "id": 2,
+      "startKv": 30,
+      "targetKv": 75,
+      "incrementKv": 1,
+      "startMa": 3,
+      "targetMa": 3,
+      "incrementMa": 0,
+      "duration": 4,
+      "status": "Skipped",
+      "skipped": false
+    },
+    {
+      "id": 3,
+      "startKv": 30,
+      "targetKv": 75,
+      "incrementKv": 1,
+      "startMa": 5,
+      "targetMa": 5,
+      "incrementMa": 0,
+      "duration": 4,
+      "status": "Arc",
+      "skipped": false
+    },
+    {
+      "id": 4,
+      "startKv": 30,
+      "targetKv": 75,
+      "incrementKv": 1,
+      "startMa": 7,
+      "targetMa": 7,
+      "incrementMa": 0,
+      "duration": 4,
+      "status": "",
+      "skipped": false
+    },
+    {
+      "id": 5,
+      "startKv": 30,
+      "targetKv": 75,
+      "incrementKv": 1,
+      "startMa": 8,
+      "targetMa": 8,
+      "incrementMa": 0,
+      "duration": 4,
+      "status": "",
+      "skipped": false
+    }
+  ]
+}
